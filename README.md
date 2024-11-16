@@ -1,24 +1,18 @@
-# README
+# Aplicação de Amostra em Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Versão do Ruby: 3.3.5
 
-Things you may want to cover:
+* Versão do Rails: 7.1.5
 
-* Ruby version
+## Iniciando
 
-* System dependencies
+* Para começar a usar a aplicação, clone o repositório e instale as gems necessárias: `bundle _2.5.23_ install`
 
-* Configuration
+* Crie o banco de dados: `rails db:create` 
 
-* Database creation
+* Inicie o banco de dados: `rails db:migrate`
 
-* Database initialization
+* Execute a suite de testes: `rails test`
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### Se os testes passarem, você vai estar pronto para iniciar a aplicação localmente:
+- `rails server`
