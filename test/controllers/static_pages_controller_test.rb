@@ -20,6 +20,11 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get contact" do
+    get static_pages_contact_url
+    assert_response :success
+  end
+
   test "should get home title" do
     get static_pages_home_url
     assert_select "title", "Home | #{ @name_app }"
@@ -33,5 +38,10 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get about title" do
     get static_pages_about_url
     assert_select "title", "About | #{ @name_app }"
+  end
+
+  test "should get contact tile" do
+    get static_pages_contact_url
+    assert_select "title", "Contact | #{ @name_app }"
   end
 end
