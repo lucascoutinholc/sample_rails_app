@@ -32,7 +32,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
 
   test "should get home title" do
     get static_pages_home_url
-    assert_select "title", "Home | #{ @name_app }"
+    assert_select "title", "Amostra App"
   end
 
   test "should get help title" do
