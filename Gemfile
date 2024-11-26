@@ -9,6 +9,7 @@ gem "sprockets-rails", "3.5.2"
 gem "stimulus-rails",  "1.3.4"
 gem "turbo-rails",     "2.0.11"
 gem "bootsnap",        "1.18.4", require: false
+gem 'bootstrap-sass',  "3.4.1"
 gem "jbuilder",        "2.13.0"
 gem "puma",            "6.4.3"
 
