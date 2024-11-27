@@ -30,6 +30,11 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should get signup" do
+    get signup_path
+    assert_response :success
+  end
+
   test "should get home title" do
     get root_path
     assert_select "title", "Amostra App"
@@ -48,5 +53,10 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get contact tile" do
     get contact_path
     assert_select "title", "Contact | #{ @name_app }"
+  end
+
+  test "should get signup title" do
+    get signup_path
+    assert_select "title", "Signup | #{ @name_app }"
   end
 end
