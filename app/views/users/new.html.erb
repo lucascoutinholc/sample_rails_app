@@ -5,21 +5,25 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_with(model: @user) do |f| %>
-      <%= f.label :name %>
-      <%= f.text_field :name %>
+      <div>
+        <%= render 'shared/error_messages' %>
+      </div>
+
+      <%= f.label :name, "Nome" %>
+      <%= f.text_field :name, class: "form-control" %>
       <!--
       <label for="user_name">Name</label>
       <input type="text" name="user[name]" id="user_name">
       -->
 
       <%= f.label :email %>
-      <%= f.email_field :email %>
+      <%= f.email_field :email, class: "form-control" %>
 
-      <%= f.label :password %>
-      <%= f.password_field :password %>
+      <%= f.label :password, "Senha" %>
+      <%= f.password_field :password, class: "form-control" %>
 
-      <%= f.label :password_confirmation %>
-      <%= f.password_field :password_confirmation %>
+      <%= f.label :password_confirmation, "Confirmação de senha" %>
+      <%= f.password_field :password_confirmation, class: "form-control" %>
 
       <%= f.submit "Criar minha conta", class: "btn btn-primary" %>
     <% end%>
