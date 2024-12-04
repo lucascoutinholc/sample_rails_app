@@ -17,5 +17,23 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert_template "users/new"
     assert_select "div#error_explanation"
     assert_select "div.alert.alert-danger"
+    assert flash.empty?
+  end
+
+  test "valid signup information" do
+    assert_difference 'User.count', 1 do
+      post users_path, params: {
+        user: {
+          name: "test",
+          email: "test@example.com",
+          password: "123test",
+          password_confirmation: "123test"
+        }
+      }
+    end
+    follow_redirect!
+    assert_template "users/show"
+    assert_not flash.empty?
+    assert_select "div.alert.alert-success"
   end
 end
