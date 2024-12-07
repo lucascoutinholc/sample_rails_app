@@ -67,6 +67,11 @@ p {
   }
 }
 
+/* Dropdown Menu */
+.dropdown-menu.active {
+  display: block;
+}
+
 /* Mixins */
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -157,6 +162,25 @@ footer {
         letter-spacing: -1px;
         margin-bottom: 3px;
         margin-top: 0px;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  footer {
+    small {
+      display: block;
+      float: none;
+      margin-bottom: 1em;
+    }
+
+    ul {
+      float: none;
+      padding: 0;
+
+      li {
+        float: none;
+        margin-left: 0;
       }
     }
   }
