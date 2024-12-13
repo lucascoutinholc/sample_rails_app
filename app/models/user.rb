@@ -11,7 +11,8 @@ class User < ApplicationRecord
             uniqueness: true
   validates :password, 
             length: { minimum: 6 },
-            presence: true
+            presence: true,
+            allow_nil: true
   has_secure_password
 
   class << self
