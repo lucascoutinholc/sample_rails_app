@@ -11,6 +11,7 @@ gem "turbo-rails",     "2.0.11"
 gem 'bcrypt',          "3.1.20"
 gem "bootsnap",        "1.18.4", require: false
 gem 'bootstrap-sass',  "3.4.1"
+gem 'faker',           "3.5.1"
 gem "jbuilder",        "2.13.0"
 gem "puma",            "6.4.3"
 
