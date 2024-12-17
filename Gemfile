@@ -14,6 +14,8 @@ gem 'bootstrap-sass',  "3.4.1"
 gem 'faker',           "3.5.1"
 gem "jbuilder",        "2.13.0"
 gem "puma",            "6.4.3"
+gem "will_paginate",   "4.0.1"
+gem "will_paginate-bootstrap", "1.0.2"
 
 group :development, :test do
   gem "debug",         "1.9.2", platforms: %i[ mri windows ]
