@@ -2,19 +2,19 @@ source "https://rubygems.org"
 
 ruby "3.3.5"
 
-gem "rails",           "7.1.5"
-gem "importmap-rails", "2.0.3"
-gem "sassc-rails",     "2.1.2"
-gem "sprockets-rails", "3.5.2"
-gem "stimulus-rails",  "1.3.4"
-gem "turbo-rails",     "2.0.11"
-gem 'bcrypt',          "3.1.20"
-gem "bootsnap",        "1.18.4", require: false
-gem 'bootstrap-sass',  "3.4.1"
-gem 'faker',           "3.5.1"
-gem "jbuilder",        "2.13.0"
-gem "puma",            "6.4.3"
-gem "will_paginate",   "4.0.1"
+gem "rails",                   "7.1.5"
+gem "importmap-rails",         "2.0.3"
+gem "sassc-rails",             "2.1.2"
+gem "sprockets-rails",         "3.5.2"
+gem "stimulus-rails",          "1.3.4"
+gem "turbo-rails",             "2.0.11"
+gem 'bcrypt',                  "3.1.20"
+gem "bootsnap",                "1.18.4", require: false
+gem 'bootstrap-sass',          "3.4.1"
+gem 'faker',                   "3.5.1"
+gem "jbuilder",                "2.13.0"
+gem "puma",                    "6.4.3"
+gem "will_paginate",           "4.0.1"
 gem "will_paginate-bootstrap", "1.0.2"
 
 group :development, :test do
