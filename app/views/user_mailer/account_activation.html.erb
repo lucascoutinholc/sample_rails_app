@@ -1,0 +1,9 @@
+<h1>Amostra App</h1>
+
+<p>Olá <%= @user.name %>,</p>
+
+<p>Bem vindo ao Amostra App! Clique no link abaixo para ativar sua conta:</p>
+
+<%= link_to "Ativar conta", edit_account_activation_url(
+                              @user.activation_token, 
+                              email: @user.email) %>
