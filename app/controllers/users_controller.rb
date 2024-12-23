@@ -19,10 +19,14 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      reset_session
-      log_in @user
-      flash[:success] = "Bem vindo ao Amostra App!"
-      redirect_to @user # or redirect_to user_path(@user)
+      UserMailer.account_activation(@user).deliver_now
+      flash[:info] = "Cheque seu email para ativar sua conta!"
+      redirect_to root_url
+
+      # reset_session
+      # log_in @user
+      # flash[:success] = "Bem vindo ao Amostra App!"
+      # redirect_to @user # or redirect_to user_path(@user)
     else
       render "new", status: :unprocessable_entity
     end
