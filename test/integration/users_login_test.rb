@@ -15,7 +15,7 @@ class InvalidPasswordTest < UsersLogin
   test "login with valid email/invalid password" do
     post login_path, params: {
       session: {
-        email: "lucas@email.com",
+        email: @user.email,
         password: "123"
       }
     }

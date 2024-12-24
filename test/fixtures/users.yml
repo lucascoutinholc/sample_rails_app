@@ -10,9 +10,16 @@ lucas:
 joao:
   name: Joao
   email: joao@example.com
-  password_digest: <%= User.digest("senha") %>
+  password_digest: <%= User.digest("password") %>
   activated: true
   activated_at: Time.zone.now
+
+inativo:
+  name: Inativo
+  email: inativo@example.com
+  password_digest: <%= User.digest("password") %>
+  admin: false
+  activated: false
 
 <% 30.times do |n| %>
 user_<%= n %>:
